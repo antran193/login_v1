@@ -1,0 +1,223 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.khung
+{
+    /* display: none; */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(143, 140, 140, 0.158);
+}
+.form1 {
+    padding: 10px;
+    background-color: #fefefe;
+    margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 20%; /* Could be more or less, depending on screen size */
+}
+
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    position: fixed;
+    background: rgb(236,14,253);
+    background: linear-gradient(231deg, rgba(236,14,253,1) 0%, rgba(153,88,242,1) 50%, rgba(4,217,222,1) 100%);
+}
+input#password{
+    width: 85%;
+    margin-bottom: 5px;
+    border: none;
+    /* border-bottom: solid 1px rgb(107, 105, 105); */
+    padding: 7px;
+    padding-left: 25px;
+    font-size: 13px;
+}
+.hidenspan
+{
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: solid 1px rgb(107, 105, 105);
+    padding: 8px 0 8px;
+    width: 100%;
+    font-size: 13px;
+}
+.hiden{
+    border: none;
+    background-color: unset;
+    cursor: default;
+  
+}
+i.fa-eye-slash
+{
+    color: rgb(126, 117, 117);
+}
+input#user
+{
+    width: 100%;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: solid 1px rgb(107, 105, 105);
+    padding: 8px;
+    padding-left: 25px;
+    font-size: 13px;
+}
+input:focus , button:focus{
+    border: none !important;
+    outline: none;
+
+}
+
+#log>h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div p{
+    margin: 3px;
+    font-weight: bolder;
+    font-size: 10px;
+}
+#pass{
+    margin-top: 20px;
+}
+button, input{
+    cursor: pointer;
+}
+.valid {
+    color: green;
+}
+.valid:before {
+    position: relative;
+    padding-right: 10px;
+    content: ' \2714';
+}
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+  
+.invalid:before {
+    position: relative;
+    padding-right: 10px;
+    content: ' \2716';
+}
+/* #alerterr{
+    background-color: rgb(219, 74, 74);
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    clear: both;
+    width: 80%;
+    margin: 30px auto 0 auto;
+} */
+#errpassword , #erruser{ 
+    /* padding-top: 10px; */
+    color: red;
+    font-size: 12px;
+    margin: 0;
+    font-weight: unset;
+    display: none;
+}
+#erruser1, #errpass1
+{
+    color: red;
+    /* color: rgb(238, 139, 139); */
+    font-size: 12px;
+    margin: 0;
+    font-weight: unset;
+}
+#forgotbutton button{
+    border: none;
+    background: none;
+    float: right;
+    color: rgb(226, 222, 222);
+}
+
+#loginbutton{
+    
+    margin-top: 20px;
+    /* width: 250px; */
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background: rgb(4,217,222);
+    background: linear-gradient(90deg, rgba(4,217,222,1) 0%, rgba(153,88,242,1) 50%, rgba(236,14,253,1) 100%);
+}
+#signorther{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    color: rgb(165, 164, 164);
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid 1px rgba(196, 25, 25, 0);
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.fb{
+    background-color: rgb(55, 55, 236);
+    
+}
+.tw{
+    background-color: rgb(0, 247, 255);
+}
+.g{
+    background-color: rgb(199, 29, 63);
+}
+.fa{
+    color: white ;
+    text-align: center;
+    /* padding-top:5px ; */
+    /* width: 25px;
+    height: 25px;
+    border: solid 1px rgba(255, 255, 255, 0);
+    border-radius: 50%; */
+}
+.bot
+{
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(116, 113, 113);
+}
+h2{
+    margin: 5px auto;
+    font-size: 15px;
+}
+.fa-user, .fa-lock{
+    color: rgb(155, 151, 151);
+    position: absolute;
+    margin: 6px ;
+
+}

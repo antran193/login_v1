@@ -1,0 +1,27 @@
+.container{
+    width: 25%;
+    height: 550px;
+    left: 35%;
+    position: relative;
+    border: 2px solid rgb(161, 156, 156);
+    border-radius: 3px;
+    padding: 20px;
+}
+.foot{
+    position: absolute;
+    bottom: 10px;
+}
+#bodymess{
+    position: absolute;
+    height: 80%;
+    width: 315px;
+}
+#messaage{
+    width: 255px;
+}
+li{
+    list-style: none;
+}
+.btndelete{
+    float: right;
+}

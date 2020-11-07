@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>a</title>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0"
+        nonce="fFFRCddw"></script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+
+    <div class="fb-login-button" data-size="large" data-button-type="continue_with" data-layout="rounded"
+        data-auto-logout-link="false" data-use-continue-as="true" data-width=""></div>
+    <fb: login-button scope="public_profile,email" onlogin="checkLoginState();">
+    </fb: login - button>
+
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '{your-app-id}',
+                cookie: true,
+                xfbml: true,
+                version: '{api-version}'
+            });
+
+            FB.AppEvents.logPageView();
+
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        FB.getLoginStatus(function (response) {
+            statusChangeCallback(response);
+        });
+
+
+        function checkLoginState() {
+            FB.getLoginStatus(function (response) {
+                statusChangeCallback(response);
+            });
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
